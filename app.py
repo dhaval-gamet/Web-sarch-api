@@ -1,10 +1,10 @@
 import os
 import requests
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+
 
 app = Flask(__name__)
-CORS(app)
+
 
 # 🔑 API-Key सुरक्षित तरीक़े से OS Environment से लो
 LANGSEARCH_API_KEY = os.getenv("LANGSEARCH_API_KEY")
