@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: langsearch-flask
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: LANGSEARCH_API_KEY
+        value: YOUR_REAL_KEY_WILL_GO_HERE
