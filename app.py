@@ -41,5 +41,5 @@ def search():
         return jsonify(res.json())
     return jsonify({"error": "LangSearch API fail", "status": res.status_code, "msg": res.text}), res.status_code
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=10000)
